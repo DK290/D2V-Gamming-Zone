@@ -1,0 +1,16 @@
+*body{
+    font-family: "Poppins", sans-serif;
+}
+.banner {
+    background-image: url("/image/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+
+}
+h1,p,h2{
+    color: black;
+}
+.games-padding{
+    padding: 70px 0;
+}
