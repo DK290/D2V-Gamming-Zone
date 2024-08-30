@@ -1,0 +1,88 @@
+*body{
+    font-family: "Poppins", sans-serif;
+}
+.banner {
+    background-image: url("/image/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+
+}
+h1,p,h2{
+    color: black;
+}
+.games-padding{
+    padding: 70px 0;
+}
+#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display:block;
+
+}
+.autocomplete-suggestions {
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    width: 65%;
+}
+.autocomplete-suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+.autocomplete-suggestion:hover {
+    background-color: #f0f0f0;
+}
+/* Hide all cards by default */
+.card {
+    display: none;
+}
+/* Modal style */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    max-height: 80vh; /* Adjustable height */ 
+    position: relative;
+}
+/* Close button style */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.search-wrapper input {
+    padding-right: 5px; /* Space for the search button and padding */
+}
+
+.search-wrapper button {
+    position: relative;
+    right: 0;
+    height: 100%;
+    border-radius: 0;
+    width: 70px; /* Adjust button width */
+    padding: 0 10px; /* Adjust padding for button */
+}
