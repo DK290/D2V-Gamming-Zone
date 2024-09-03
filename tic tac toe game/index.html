@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Player Input and Start Screen -->
+    <div id="start-screen" class="screen">
+        <a href="/index.html" id="home-button">
+            <button class="btn"><i class="fa fa-home"></i> Home</button>
+        </a>
+        <h2>Enter Player Names</h2>
+        <input type="text" id="player1" placeholder="Player 1 Name">
+        <input type="text" id="player2" placeholder="Player 2 Name">
+        <button id="start-game">Start Game</button>
+        
+
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen" style="display: none;">
+        <div class="turn-container">
+            <h3>Turn For</h3>
+            <div class="turn-box align">X</div>
+            <div class="turn-box align">O</div>
+            <div class="bg"></div>
+        </div>
+        <div class="main-grid">
+            <div class="box align">0</div>
+            <div class="box align">1</div>
+            <div class="box align">2</div>
+            <div class="box align">3</div>
+            <div class="box align">4</div>
+            <div class="box align">5</div>
+            <div class="box align">6</div>
+            <div class="box align">7</div>
+            <div class="box align">8</div>
+        </div>
+        <h2 id="results"></h2>
+        <button id="play-again">Play Again</button>
+
+        <audio id="start-game-sound" src="/audio/start.mp3"></audio>
+        <audio id="win-sound" src="/audio/win.mp3"></audio>
+        <audio id="draw-sound" src="/audio/kill.mp3"></audio>
+        <audio id="play-again-sound" src="/audio/enter.mp3"></audio>
+
+        <!-- Winner List -->
+        <h2>Winner List</h2>
+        <ul id="winners"></ul>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="/js/tictactoe.js"></script>
+</body>
+</html>
